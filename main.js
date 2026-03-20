@@ -84,7 +84,7 @@ contactForm?.addEventListener('submit', async (e) => {
   await new Promise(r => setTimeout(r, 800));
 
   // Open email client as fallback (works without backend)
-  window.location.href = `mailto:esic@euba.sk?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:androsenkovladyslav@gmail.com?subject=${subject}&body=${body}`;
 
   // Show success message
   contactForm.style.display = 'none';
