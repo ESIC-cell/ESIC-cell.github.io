@@ -609,8 +609,8 @@ html { overflow-x: hidden; max-width: 100%; }
 body { overflow-x: hidden; max-width: 100%; }
 
 @media (max-width: 1024px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero-right { min-height: 260px; padding: 2rem; }
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-right { min-height: 200px; padding: 2rem; }
   .hero-stats  { position: static; }
   .hero-left   { padding: 5rem 2rem 3rem; max-width: 100%; }
   nav { padding: 0 1.5rem; }
@@ -643,10 +643,13 @@ body { overflow-x: hidden; max-width: 100%; }
   /* Container — tighter padding on small screens */
   .container { padding: 0 1.2rem; }
 
-  /* Sections — reduce vertical padding on mobile */
-  .section-dark  { padding: 4rem 0; }
-  .section-light { padding: 4rem 0; }
-  .section-royal { padding: 4rem 0; }
+  /* Sections — tighter on mobile, no gap visible when scrolled */
+  .section-dark  { padding: 3rem 0; }
+  .section-light { padding: 3rem 0; }
+  .section-royal { padding: 3rem 0; }
+
+  /* Why-grid first section gets even less top padding */
+  .why.section-light { padding-top: 2rem; }
 
   /* Page hero — fix the gap between nav and content */
   .page-hero {
@@ -655,9 +658,10 @@ body { overflow-x: hidden; max-width: 100%; }
   }
   .page-hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
 
-  /* Hero homepage */
-  .hero-left { padding: 4rem 1.2rem 2.5rem; }
-  .hero-right { min-height: 220px; padding: 1.5rem; }
+  /* Hero */
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-bottom: 0; }
+  .hero-left { padding: 4rem 1.2rem 2rem; }
+  .hero-right { display: none; }
   .hero-acronym { font-size: 5rem; }
 
   /* Grids */
