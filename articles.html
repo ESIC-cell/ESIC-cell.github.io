@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analýzy | ESIC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-badge">ESIC</div>
+    <div class="nav-name">ESIC <span>EUBA Students Investment Club</span></div>
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="about.html">O klube</a></li>
+    <li><a href="articles.html">Analýzy</a></li>
+    <li><a href="team.html">Tím</a></li>
+    <li><a href="join.html" class="nav-cta">Pridaj sa</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <p class="eyebrow">Výstupy</p>
+    <h1>Analýzy &amp;<br><em style="font-style:normal;color:var(--gold)">Research</em></h1>
+  </div>
+</section>
+
+<section class="section-dark" style="padding-top:4rem">
+  <div class="container">
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Všetky</button>
+      <button class="filter-btn" data-filter="ma">M&A</button>
+      <button class="filter-btn" data-filter="valuation">Valuácia</button>
+      <button class="filter-btn" data-filter="pe">Private Equity</button>
+      <button class="filter-btn" data-filter="markets">Markets</button>
+    </div>
+
+    <!-- Coming soon notice -->
+    <div style="background:var(--royal);border-left:3px solid var(--gold);padding:1.2rem 1.5rem;margin-bottom:2.5rem">
+      <p style="font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;margin-bottom:.3rem">· Upozornenie ·</p>
+      <p style="font-size:.92rem;color:var(--sky);line-height:1.65">ESIC práve začína svoju prvú sezónu. Analýzy a výskumné správy budú pribúdať počas semestra. Sledujte nás na <a href="https://instagram.com/esic.euba" target="_blank" style="color:var(--gold)">@esic.euba</a> a na <a href="https://www.linkedin.com/groups/17961060" target="_blank" style="color:var(--gold)">LinkedIn</a>.</p>
+    </div>
+
+    <!-- Article cards -->
+    <div class="articles-full">
+
+      <a href="#" class="article-card-dark reveal" data-cat="ma">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#1A3A6B,#0D1B3E)">
+          <span class="thumb-label">M&A</span>
+        </div>
+        <div class="article-body">
+          <span class="article-cat">M&A · CEE trh</span>
+          <h3>Konsolidácia slovenského energetického sektora</h3>
+          <p>Prehľad významných M&A transakcií v energetike. Analýza ocenenia, synergie a strategickej logiky.</p>
+          <span class="article-meta">15 Mar 2026 · ESIC Research</span>
+        </div>
+      </a>
+
+      <a href="#" class="article-card-dark reveal" style="--delay:.08s" data-cat="valuation">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#1A4A3B,#0D2A1E)">
+          <span class="thumb-label">DCF</span>
+        </div>
+        <div class="article-body">
+          <span class="article-cat">Valuácia</span>
+          <h3>DCF analýza: prípadová štúdia výrobnej spoločnosti CEE</h3>
+          <p>Krok za krokom aplikácia DCF metodiky na fiktívnu stredoeurópsku spoločnosť.</p>
+          <span class="article-meta">8 Mar 2026 · ESIC Research</span>
+        </div>
+      </a>
+
+      <a href="#" class="article-card-dark reveal" style="--delay:.16s" data-cat="pe">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#3A2A1A,#2A1A0D)">
+          <span class="thumb-label">LBO</span>
+        </div>
+        <div class="article-body">
+          <span class="article-cat">Private Equity</span>
+          <h3>Základy LBO modelovania pre začínajúcich analytikov</h3>
+          <p>Praktický sprievodca konštrukciou LBO modelu vrátane debt sizing a returns analysis.</p>
+          <span class="article-meta">1 Mar 2026 · ESIC Research</span>
+        </div>
+      </a>
+
+      <a href="#" class="article-card-dark reveal" style="--delay:.24s" data-cat="markets">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#2E3A6B,#1A2050)">
+          <span class="thumb-label">CEE</span>
+        </div>
+        <div class="article-body">
+          <span class="article-cat">Markets · CEE</span>
+          <h3>M&A deal flow na slovenskom trhu: Q1 2026</h3>
+          <p>Prehľad transakcií a trendov na domácom trhu za prvý kvartál.</p>
+          <span class="article-meta">22 Feb 2026 · ESIC Research</span>
+        </div>
+      </a>
+
+      <a href="#" class="article-card-dark reveal" style="--delay:.32s" data-cat="valuation">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#3A1A3A,#2A0D2A)">
+          <span class="thumb-label">EV</span>
+        </div>
+        <div class="article-body">
+          <span class="article-cat">Valuácia · Comps</span>
+          <h3>EV/EBITDA multiples: sektorové porovnanie CEE vs. Western Europe</h3>
+          <p>Analýza ocenenia naprieč sektormi s dôrazom na stredoeurópske špecifiká.</p>
+          <span class="article-meta">14 Feb 2026 · ESIC Research</span>
+        </div>
+      </a>
+
+      <a href="#" class="article-card-dark reveal" style="--delay:.4s" data-cat="ma">
+        <div class="article-thumb" style="background:linear-gradient(135deg,#1A3A2A,#0D2A1A)">
+          <span class="thumb-label">DD</span>
+        </div>
+        <div class="article-body">
+          <span class="article-cat">M&A · Due Diligence</span>
+          <h3>Finančná due diligence: na čo nezabudnúť</h3>
+          <p>Praktický checklist pre finančnú DD so zameraním na red flags v účtovníctve.</p>
+          <span class="article-meta">5 Feb 2026 · ESIC Research</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">ESIC</div>
+      <div class="footer-tagline">EUBA Students Investment Club</div>
+      <p>Prvý M&A a investičný klub na Ekonomickej univerzite v Bratislave.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Klub</div>
+      <a href="about.html">O klube</a>
+      <a href="team.html">Tím</a>
+      <a href="about.html#partner">Partnerstvo</a>
+      <a href="https://www.euba.sk" target="_blank" rel="noopener">EUBA →</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Obsah</div>
+      <a href="articles.html">Analýzy</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Kontakt</div>
+      <a href="mailto:androsenkovladyslav@gmail.com">androsenkovladyslav@gmail.com</a>
+      <a href="https://instagram.com/esic.euba" target="_blank">@esic.euba</a>
+      <a href="https://www.linkedin.com/groups/17961060" target="_blank">LinkedIn</a>
+      <a href="join.html">Pridaj sa</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025–2026 EUBA Students Investment Club · Bratislava</span>
+    <div class="footer-socials">
+      <a href="https://instagram.com/esic.euba" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/groups/17961060" target="_blank">LinkedIn</a>
+      <a href="mailto:androsenkovladyslav@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
